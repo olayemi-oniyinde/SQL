@@ -29,6 +29,12 @@ INSERT INTO hobbies (person_id, name) VALUES (4, "coding");
 INSERT INTO hobbies (person_id, name) VALUES (4, "dilly-dallying");
 INSERT INTO hobbies (person_id, name) VALUES (4, "meowing");
 INSERT INTO hobbies (person_id, name) VALUES (4, "painting");
+
+------select the 2 tables with a join so that you can see each person's name next to their hobby.
+
 SELECT persons.name,hobbies.name FROM persons JOIN hobbies ON persons.id= hobbies.person_id;
+
+-------Additional query that shows only the name and hobbies of 'Bobby McBobbyFace', using JOIN combined with WHER
+
 SELECT persons.name,hobbies.name FROM persons JOIN hobbies ON persons.id= hobbies.person_id WHERE persons.id=1
 ;
