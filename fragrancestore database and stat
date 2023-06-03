@@ -1,4 +1,7 @@
---Create a fragrance store database
+--I Created a fragrance store database
+-------display the database ordered by price
+--------what is the avg price of fragrance in the store where size =3.4? 
+--------what are the most 5 stocked fragrance in the store? 
 
 CREATE TABLE store (id INTEGER PRIMARY KEY, fragrancename TEXT, price REAL, size INTEGER, quantity INTEGER);
 
