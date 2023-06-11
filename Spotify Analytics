@@ -36,10 +36,15 @@ artist_name
 ,avg(danceability)
 ,avg(energy)
 FROM BIT_DB.spotifydata
-GROUP BY artist_name, track_name
+GROUP BY artist_name, track_name;
 
 ------Who are the top 10 artists based on popularity?
 SELECT track_name, artist_name, popularity
 FROM BIT_DB.spotifydata
 ORDER BY popularity desc
-LIMIT 10
+LIMIT 10;
+------- What 3 artistS released the longest song?
+SELECT artist_name, track_name, popularity,duration_ms
+FROM BIT_DB.spotifydata
+ORDER BY duration_ms desc
+LIMIT 3;
